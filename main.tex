@@ -86,7 +86,7 @@
 \begin{center}
     \textbf{\Huge Tianyi Zhang} \\ \vspace{2pt}
     \small 404-422-2842 $|$ \href{mailto:tzhang708@gatech.edu}{tzhang708@gatech.edu} $|$
-    \href{https://www.linkedin.com/in/tianyi-zhang-gt-emory-cs/}{LinkedIn} $|$
+    \href{https://www.linkedin.com/in/tianyi-zhang2002/}{LinkedIn} $|$
     \href{https://scholar.google.com/citations?hl=en&view_op=list_works&user=46rbYk0AAAAJ}{Google Scholar}
 \end{center}
 
@@ -95,7 +95,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Georgia Institute of Technology}{Atlanta, GA}
-      {Master of Science in Computer Science}{Aug 2025 -- May 2027}
+      {Master of Science in Computer Science}{Aug 2025 -- Dec 2026}
     \resumeSubheading
       {Emory University}{Atlanta, GA}
       {Bachelor of Science in Quantitative Sciences}{Aug 2021 -- May 2025}
@@ -122,7 +122,7 @@
     {Georgia Tech Efficient \& Intelligent Computing Lab $\cdot$ NVIDIA Collaboration}{Atlanta, GA}
     {Student Researcher $|$ LLM Evaluation, Agentic AI}{Jul 2025 -- Dec 2025}
   \resumeItemListStart
-    \resumeItem{Co-authored \textbf{COBA} (\textbf{ICML 2026}), an automated pipeline auditing validity flaws in LLM-agent benchmarks; matched expert judgments at \textbf{0.79--0.87 F1} across \textbf{6 benchmarks} and showed flaws affect \textbf{$\sim$23\% of tasks}, reshuffling \textbf{63\% of model rankings} on a 30-LLM leaderboard.}
+    \resumeItem{Co-authored \textbf{AgentSuite} (\textbf{ICML 2026}), an automated pipeline auditing validity flaws in LLM-agent benchmarks; matched expert judgments at \textbf{0.79--0.87 F1} across \textbf{6 benchmarks} and showed flaws affect \textbf{$\sim$23\% of tasks}, reshuffling \textbf{63\% of model rankings} on a 30-LLM leaderboard.}
     \resumeItem{Built the \textbf{taxonomy-guided LLM-judge} stage and \textbf{rule-based structural detectors} powering the pipeline, decomposing agent tasks into user/environment/ground-truth/evaluation components; generalized to unseen benchmarks with no retuning and surfaced 100+ previously undocumented issues.}
   \resumeItemListEnd
 
@@ -149,10 +149,14 @@ Benchmark Auditing Pipeline}'' \textit{International Conference on Machine Learn
 %-----------PROJECTS-----------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeProjectHeading{\textbf{monitorstress}: Stress-Test Runner for AI Safety Monitors \small{\href{https://github.com/tianyi-zhang-02/monitorstress}{\faGithub}}}{Apr 2026 -- Present}
+    \resumeProjectHeading{\textbf{loopcanary}: Agent-Loop Observability Library \small{\href{https://github.com/tianyi-zhang-02/monitorstress}{\faGithub}}}{Apr 2026 -- Present}
     \resumeItemListStart
-      \resumeItem{Architecting an \textbf{open-source evaluation framework} for \textbf{LLM-based AI safety monitors}---the deployed class of system labs like METR and UK AISI use to detect agent reward hacking and sandbagging---addressing a documented gap: monitors are evaluated mostly on clean transcripts, leaving robustness under structure-preserving transcript transformations under-measured.}
-      \resumeItem{Designed and shipped the \textbf{Python/Pydantic v2} stack: typed event-stream trajectory model, verdicts with first-class abstention, adversarial transformation suite (chain-of-thought stripping, observation truncation, action-padding noise), \textbf{MALT} adapter (METR's public split of labeled agent transcripts), and a CLI runner reproducing METR's published monitor \textbf{prompt} as the reference baseline.}
+      \resumeItem{Building an \textbf{open-source Python library for agent-loop observability}---it watches an LLM agent's execution and diagnoses when the loop goes off-rails (the same tool call firing repeatedly, silent context compression, memory writes never recalled, cost run-away, or a safety monitor raising an alarm), emitting a per-run timeline to inspect after the fact or stream live.}
+      \resumeItem{Grew from a \textbf{Python/Pydantic v2} batch stress-test tool for LLM-based AI safety monitors---typed event-stream trajectory model, verdicts with first-class abstention, an adversarial transformation suite (CoT stripping, observation truncation, action-padding noise), and a \textbf{MALT} adapter over METR's labeled agent transcripts.}
+    \resumeItemListEnd
+    \resumeProjectHeading{\textbf{coact}: Governance Substrate for Two Coding Agents \small{\href{https://github.com/tianyi-zhang-02/coact}{\faGithub}}}{Jul 2026 -- Present}
+    \resumeItemListStart
+      \resumeItem{Building a \textbf{governance substrate} that lets Claude Code and Codex work in the same repo safely---capability policies, advisory locks and a shared task board, worktree isolation with merge gates, and an append-only journal for replayable oversight---organized around \textbf{security, controllability, and cost}. A single dependency-free \textbf{Go} binary.}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -161,7 +165,7 @@ Benchmark Auditing Pipeline}'' \textit{International Conference on Machine Learn
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-    \textbf{Programming:} Python, SQL, Java, R, C/C++ \quad
+    \textbf{Programming:} Python, Go, SQL, Java, R, C/C++ \quad
     \textbf{ML/AI:} PyTorch, CUDA, Hugging Face, vLLM,  SGLang, LangChain, MLflow \\
     \textbf{Infra:} Docker, AWS, GitHub Actions, FastAPI, Linux \quad
     \textbf{Data:} PostgreSQL, MongoDB, Redis, Apache Spark
