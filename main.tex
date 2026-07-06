@@ -1,0 +1,171 @@
+%-------------------------
+% Resume in Latex (One-Page Version)
+% Author : Tianyi Zhang
+%------------------------
+
+\documentclass[letterpaper,10.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-.55in}
+\addtolength{\textheight}{1.1in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{%
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumePublication}[1]{
+  \item\small{#1 \vspace{-3pt}}
+}
+
+\newcommand{\resumeKeywords}[1]{
+  \vspace{2pt}\item[]\small{\textit{Keywords: #1}}\vspace{-2pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-3pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0.5pt, topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Tianyi Zhang} \\ \vspace{2pt}
+    \small 404-422-2842 $|$ \href{mailto:tzhang708@gatech.edu}{tzhang708@gatech.edu} $|$
+    \href{https://www.linkedin.com/in/tianyi-zhang-gt-emory-cs/}{LinkedIn} $|$
+    \href{https://scholar.google.com/citations?hl=en&view_op=list_works&user=46rbYk0AAAAJ}{Google Scholar}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Georgia Institute of Technology}{Atlanta, GA}
+      {Master of Science in Computer Science}{Aug 2025 -- May 2027}
+    \resumeSubheading
+      {Emory University}{Atlanta, GA}
+      {Bachelor of Science in Quantitative Sciences}{Aug 2021 -- May 2025}
+  \resumeSubHeadingListEnd
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {LinkedIn Corporation}{Mountain View, CA}
+    {AI/ML Engineer Intern $|$ LLM for RecSys, LLM Post-Training}{May 2026 -- Present}
+\resumeItemListStart
+  \resumeItem{Contributing to LinkedIn's \textbf{Apollo out-of-network retrieval} system for homepage-feed candidate generation, applying \textbf{LLM-based generative retrieval} to surface relevant content beyond a member's immediate network.}
+
+  \resumeItem{Led a promising research direction on \textbf{adaptive and compressed member representation}, developing a framework for modeling profile signals, temporal engagement history, long-history compression, and member-regime differences in retrieval.}
+
+    \resumeItem{Built a \textbf{multi-axis retrieval experimentation framework} to study tradeoffs among \textbf{Recall@K}, diversity, efficiency, retrieval data paradigm, and evaluation fidelity across cold-start, sparse-history, stale-history, and active-user scenarios.}
+
+  \resumeItem{Developed a reusable \textbf{Apollo experimentation pipeline} for standardized training, retrieval evaluation, configuration reuse, execution tracking, and experiment logging, improving team velocity and reproducibility for LLM retrieval research.}
+\resumeItemListEnd
+
+  \resumeSubheading
+    {Georgia Tech Efficient \& Intelligent Computing Lab $\cdot$ NVIDIA Collaboration}{Atlanta, GA}
+    {Student Researcher $|$ LLM Evaluation, Agentic AI}{Jul 2025 -- Dec 2025}
+  \resumeItemListStart
+    \resumeItem{Co-authored \textbf{COBA} (\textbf{ICML 2026}), an automated pipeline auditing validity flaws in LLM-agent benchmarks; matched expert judgments at \textbf{0.79--0.87 F1} across \textbf{6 benchmarks} and showed flaws affect \textbf{$\sim$23\% of tasks}, reshuffling \textbf{63\% of model rankings} on a 30-LLM leaderboard.}
+    \resumeItem{Built the \textbf{taxonomy-guided LLM-judge} stage and \textbf{rule-based structural detectors} powering the pipeline, decomposing agent tasks into user/environment/ground-truth/evaluation components; generalized to unseen benchmarks with no retuning and surfaced 100+ previously undocumented issues.}
+  \resumeItemListEnd
+
+
+\resumeSubheading
+    {Emory Graph Mining Lab}{Atlanta, GA}
+    {Machine Learning Researcher $|$ AI for Science, Graph Representation Learning}{Dec 2023 -- May 2025}
+  \resumeItemListStart
+    \resumeItem{First-authored a \textbf{causal brain-connectivity} method (\textbf{AIME 2025}) that recovered \textbf{directional} dependencies invisible to correlation-based graphs, improving downstream diagnostic prediction across \textbf{$\sim$8K patients} via Granger-directed graphs.}
+    \resumeItem{Co-authored a \textbf{state-based Transformer} (\textbf{IEEE EMBC 2025}, oral) that modeled temporal transitions across latent functional-connectivity states, outperforming static-connectivity baselines on clinical prediction.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, topsep=2pt]
+  \resumePublication{H. Suh*, S. Lee*, B. Ji*, R. Khare, B. Khan, H. Kim, \textbf{T. Zhang}, et al. ``\href{https://openreview.net/pdf?id=2Exmr1eIKZ}{AgentSuite: Toward More Reliable Agent Evaluation with a Component-Based
+Benchmark Auditing Pipeline}'' \textit{International Conference on Machine Learning} (\textbf{ICML}) 2026.}
+  \resumePublication{\textbf{T. Zhang}, K. Han, J. Nie, et al. ``\href{https://link.springer.com/chapter/10.1007/978-3-031-95841-0_81}{Causal Brain Connectivity: Integrating Granger Directed Graphs in fMRI Analysis}.'' \textit{International Conference on Artificial Intelligence in Medicine} (\textbf{AIME}) 2025.}
+  \resumePublication{J. Nie, K. Han, \textbf{T. Zhang}, et al. ``\href{https://www.cs.emory.edu/~jyang71/files/bnst.pdf}{Brain Network State Transformer: Leveraging State Functional Connectivity}.'' \textit{IEEE Engineering in Medicine and Biology Society} (\textbf{EMBC}) 2025. \textit{(Oral)}}
+\end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading{\textbf{monitorstress}: Stress-Test Runner for AI Safety Monitors \small{\href{https://github.com/tianyi-zhang-02/monitorstress}{\faGithub}}}{Apr 2026 -- Present}
+    \resumeItemListStart
+      \resumeItem{Architecting an \textbf{open-source evaluation framework} for \textbf{LLM-based AI safety monitors}---the deployed class of system labs like METR and UK AISI use to detect agent reward hacking and sandbagging---addressing a documented gap: monitors are evaluated mostly on clean transcripts, leaving robustness under structure-preserving transcript transformations under-measured.}
+      \resumeItem{Designed and shipped the \textbf{Python/Pydantic v2} stack: typed event-stream trajectory model, verdicts with first-class abstention, adversarial transformation suite (chain-of-thought stripping, observation truncation, action-padding noise), \textbf{MALT} adapter (METR's public split of labeled agent transcripts), and a CLI runner reproducing METR's published monitor \textbf{prompt} as the reference baseline.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Programming:} Python, SQL, Java, R, C/C++ \quad
+    \textbf{ML/AI:} PyTorch, CUDA, Hugging Face, vLLM,  SGLang, LangChain, MLflow \\
+    \textbf{Infra:} Docker, AWS, GitHub Actions, FastAPI, Linux \quad
+    \textbf{Data:} PostgreSQL, MongoDB, Redis, Apache Spark
+  }}
+\end{itemize}
+
+\end{document}
