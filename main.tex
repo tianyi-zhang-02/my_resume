@@ -38,7 +38,7 @@
 \setlength{\tabcolsep}{0in}
 
 \titleformat{\section}{
-  \vspace{-8pt}\scshape\raggedright\large
+  \vspace{-6pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
 
 \pdfgentounicode=1
@@ -46,7 +46,7 @@
 %-------------------------
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-3pt}}
+    {#1 \vspace{-2pt}}
   }
 }
 
@@ -76,7 +76,7 @@
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-3pt}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0.5pt, topsep=2pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
 
@@ -113,7 +113,9 @@
 
   \resumeItem{Led a research direction on \textbf{adaptive and compressed member representation}---modeling profile signals, temporal engagement history, long-history compression, and member-regime differences in retrieval.}
 
-  \resumeItem{Built a reusable \textbf{retrieval experimentation framework} (standardized training, evaluation, config reuse, and run tracking) and used it to map \textbf{Recall@K}/diversity/efficiency tradeoffs across cold-start, sparse, stale, and active-user regimes.}
+  \resumeItem{Built a \textbf{multi-axis retrieval experimentation framework} mapping tradeoffs among \textbf{Recall@K}, diversity, efficiency, and evaluation fidelity across cold-start, sparse, stale, and active-user regimes.}
+
+  \resumeItem{Developed a reusable \textbf{out-of-network experimentation pipeline}---standardized training, retrieval evaluation, config reuse, execution tracking, and experiment logging---improving team velocity and reproducibility for LLM retrieval research.}
 \resumeItemListEnd
 
   \resumeSubheading
@@ -149,7 +151,8 @@ Benchmark Auditing Pipeline}'' \textit{International Conference on Machine Learn
   \resumeSubHeadingListStart
     \resumeProjectHeading{\textbf{coact} --- governance substrate for two coding agents \small{\href{https://github.com/tianyi-zhang-02/coact}{\faGithub}}}{Jul 2026 -- Present}
     \resumeItemListStart
-      \resumeItem{A dependency-free \textbf{Go} binary that lets Claude Code and Codex share one repository safely: capability policies, advisory locks, a shared task board, worktree isolation, and an append-only journal. Designed around \textbf{security, controllability, and cost}.}
+      \resumeItem{A dependency-free \textbf{Go} binary that lets Claude Code and Codex work in one repository safely, coordinating through the filesystem instead of the token stream---capability policies, advisory locks, and a shared task board.}
+      \resumeItem{Isolates each agent in its own \textbf{worktree} behind merge gates and keeps an \textbf{append-only journal} for replayable oversight; organized around \textbf{security, controllability, and cost}.}
     \resumeItemListEnd
     \resumeProjectHeading{\textbf{NVIDIA NeMo RL} --- open-source contributor \small{\href{https://github.com/NVIDIA-NeMo/RL}{\faGithub}}}{2026}
     \resumeItemListStart
