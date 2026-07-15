@@ -113,7 +113,7 @@
 
   \resumeItem{Led a research direction on \textbf{adaptive and compressed member representation}---modeling profile signals, temporal engagement history, long-history compression, and member-regime differences in retrieval.}
 
-  \resumeItem{Built a reusable \textbf{multi-axis retrieval experimentation framework} (standardized training, evaluation, config reuse, execution tracking) studying tradeoffs among \textbf{Recall@K}, diversity, efficiency, and evaluation fidelity across cold-start, sparse-, stale-, and active-user regimes---improving team velocity and reproducibility.}
+  \resumeItem{Built a reusable \textbf{retrieval experimentation framework} (standardized training, evaluation, config reuse, and run tracking) and used it to map \textbf{Recall@K}/diversity/efficiency tradeoffs across cold-start, sparse, stale, and active-user regimes.}
 \resumeItemListEnd
 
   \resumeSubheading
@@ -121,7 +121,7 @@
     {Student Researcher $|$ LLM Evaluation, Agentic AI}{Jul 2025 -- Dec 2025}
   \resumeItemListStart
     \resumeItem{Co-authored \textbf{AgentSuite} (\textbf{ICML 2026}), an automated pipeline auditing validity flaws in LLM-agent benchmarks; matched expert judgments at \textbf{0.79--0.87 F1} across \textbf{6 benchmarks} and showed flaws affect \textbf{$\sim$23\% of tasks}, reshuffling \textbf{63\% of model rankings} on a 30-LLM leaderboard.}
-    \resumeItem{Built the \textbf{taxonomy-guided LLM-judge} stage and \textbf{rule-based structural detectors} powering the pipeline, decomposing agent tasks into user/environment/ground-truth/evaluation components; generalized to unseen benchmarks with no retuning and surfaced 100+ previously undocumented issues.}
+    \resumeItem{Built the pipeline's \textbf{taxonomy-guided LLM-judge} and \textbf{rule-based structural detectors}, which decompose an agent task into user, environment, ground-truth, and evaluation components; generalized to unseen benchmarks with no retuning, surfacing \textbf{100+} undocumented issues.}
   \resumeItemListEnd
 
 
@@ -144,22 +144,18 @@ Benchmark Auditing Pipeline}'' \textit{International Conference on Machine Learn
   \resumePublication{J. Nie, K. Han, \textbf{T. Zhang}, et al. ``\href{https://www.cs.emory.edu/~jyang71/files/bnst.pdf}{Brain Network State Transformer: Leveraging State Functional Connectivity}.'' \textit{IEEE Engineering in Medicine and Biology Society} (\textbf{EMBC}) 2025. \textit{(Oral)}}
 \end{itemize}
 
-%-----------PROJECTS-----------
-\section{Projects}
+%-----------PROJECTS & OPEN SOURCE-----------
+\section{Projects \& Open Source}
   \resumeSubHeadingListStart
-    \resumeProjectHeading{\textbf{coact}: Governance Substrate for Two Coding Agents \small{\href{https://github.com/tianyi-zhang-02/coact}{\faGithub}}}{Jul 2026 -- Present}
+    \resumeProjectHeading{\textbf{coact} --- governance substrate for two coding agents \small{\href{https://github.com/tianyi-zhang-02/coact}{\faGithub}}}{Jul 2026 -- Present}
     \resumeItemListStart
-      \resumeItem{\textbf{Governance substrate} (dependency-free \textbf{Go} binary) letting Claude Code and Codex share one repo safely---capability policies, advisory locks, a shared task board, worktree isolation, and an append-only journal---around \textbf{security, controllability, and cost}.}
+      \resumeItem{A dependency-free \textbf{Go} binary that lets Claude Code and Codex share one repository safely: capability policies, advisory locks, a shared task board, worktree isolation, and an append-only journal. Designed around \textbf{security, controllability, and cost}.}
+    \resumeItemListEnd
+    \resumeProjectHeading{\textbf{NVIDIA NeMo RL} --- open-source contributor \small{\href{https://github.com/NVIDIA-NeMo/RL}{\faGithub}}}{2026}
+    \resumeItemListStart
+      \resumeItem{Contributor to NVIDIA's open-source library for \textbf{reinforcement learning and post-training} of large language models.}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
-
-%-----------OPEN SOURCE-----------
-\section{Open Source}
-\begin{itemize}[leftmargin=0.15in, label={}]
-  \small{\item{
-    \textbf{NVIDIA NeMo RL} \small{\href{https://github.com/NVIDIA-NeMo/RL}{\faGithub}} --- contributor to NVIDIA's open-source library for reinforcement learning and post-training of large language models.
-  }}
-\end{itemize}
 
 
 %-----------TECHNICAL SKILLS-----------
