@@ -38,7 +38,7 @@
 \setlength{\tabcolsep}{0in}
 
 \titleformat{\section}{
-  \vspace{-6pt}\scshape\raggedright\large
+  \vspace{-8pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
 
 \pdfgentounicode=1
@@ -46,7 +46,7 @@
 %-------------------------
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-3pt}}
   }
 }
 
@@ -76,7 +76,7 @@
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-3pt}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-5pt}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0.5pt, topsep=2pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
 
@@ -113,9 +113,7 @@
 
   \resumeItem{Led a research direction on \textbf{adaptive and compressed member representation}---modeling profile signals, temporal engagement history, long-history compression, and member-regime differences in retrieval.}
 
-    \resumeItem{Built a \textbf{multi-axis retrieval experimentation framework} studying tradeoffs among \textbf{Recall@K}, diversity, efficiency, and evaluation fidelity across cold-start, sparse-, stale-, and active-user regimes.}
-
-  \resumeItem{Developed a reusable \textbf{out-of-network experimentation pipeline} for standardized training, retrieval evaluation, configuration reuse, execution tracking, and experiment logging, improving team velocity and reproducibility for LLM retrieval research.}
+  \resumeItem{Built a reusable \textbf{multi-axis retrieval experimentation framework} (standardized training, evaluation, config reuse, execution tracking) studying tradeoffs among \textbf{Recall@K}, diversity, efficiency, and evaluation fidelity across cold-start, sparse-, stale-, and active-user regimes---improving team velocity and reproducibility.}
 \resumeItemListEnd
 
   \resumeSubheading
