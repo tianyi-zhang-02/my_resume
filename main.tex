@@ -109,15 +109,13 @@
 
 \resumeSubheading
     {LinkedIn Corporation}{Mountain View, CA}
-    {AI/ML Engineer Intern $|$ GenAI for RecSys, LLM Post-Training}{May 2026 -- Present}
+    {AI/ML Engineer Intern $|$ Feed AI, LLM Retrieval}{May 2026 -- Present}
 \resumeItemListStart
-  \resumeItem{Contributing to LinkedIn's \textbf{out-of-network retrieval} system for homepage-feed candidate generation, applying \textbf{LLM-based generative retrieval} to surface relevant content beyond a member's immediate network.}
+  \resumeItem{Built a backend-agnostic \textbf{Adaptive User Representation Layer} that emits compact short-/long-term intents, lifecycle state, confidence, and evidence provenance as shared conditioning for embedding retrieval and generative recommendation.}
 
-  \resumeItem{Led a research direction on \textbf{adaptive and compressed member representation}---modeling profile signals, temporal engagement history, long-history compression, and member-regime differences in retrieval.}
+  \resumeItem{Built a production-scale \textbf{PySpark scorecard over 2.7B member--candidate pairs} and matched lifecycle evaluation; uncovered \textbf{+25.1\% Recall@10 / +26.8\% NDCG@10} but \textbf{21.6\% lower ILD} for Semi-cold versus Active members, informing model selection and lifecycle strategy that balance relevance with feed breadth.}
 
-  \resumeItem{Built a \textbf{multi-axis retrieval experimentation framework} mapping tradeoffs among \textbf{Recall@K}, diversity, efficiency, and evaluation fidelity across cold-start, sparse, stale, and active-user regimes.}
-
-  \resumeItem{Developed a reusable \textbf{out-of-network experimentation pipeline}---standardized training, retrieval evaluation, config reuse, execution tracking, and experiment logging---improving team velocity and reproducibility for LLM retrieval research.}
+  \resumeItem{Improved distributed training and serving reliability through layered configuration, reproducible execution, train/serve parity checks, serving observability, and one-axis-at-a-time validation across representation, model capacity, retrieval backend, and lifecycle policy.}
 \resumeItemListEnd
 
   \resumeSubheading
