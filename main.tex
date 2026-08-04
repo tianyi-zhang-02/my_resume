@@ -151,8 +151,8 @@ Benchmark Auditing Pipeline}'' \textit{International Conference on Machine Learn
   \resumeSubHeadingListStart
     \resumeProjectHeading{\textbf{NVIDIA NeMo RL}: Open-Source Contributor \small{\href{https://github.com/NVIDIA-NeMo/RL/commits/main/?author=tianyi-zhang-02}{\faGithub}}}{2026}
     \resumeItemListStart
-      \resumeItem{Maintained post-training correctness across data and checkpoint boundaries: added verifiable-math response data, surfaced silently ignored dataset configs through backward-compatible warnings, fixed subset propagation and validation-split documentation, and made best-checkpoint selection deterministic under metric ties.}
-      \resumeItem{Optimized same-vocabulary \textbf{top-k knowledge distillation} by replacing full-vocabulary student log-softmax with a tensor-parallel gather of teacher-selected logits, reducing the dominant intermediate from $O(TV)$ to $O(TK)$ while preserving forward loss and gradient semantics.}
+      \resumeItem{\textbf{Correctness \& maintenance} (\href{https://github.com/NVIDIA-NeMo/RL/pull/3071}{\#3071}, \href{https://github.com/NVIDIA-NeMo/RL/issues/3131}{\#3131}, \href{https://github.com/NVIDIA-NeMo/RL/pull/3271}{\#3271}, \href{https://github.com/NVIDIA-NeMo/RL/pull/3389}{\#3389}): hardened checkpoint selection, dataset ingestion, and configuration validation across RL training workflows.}
+      \resumeItem{\textbf{Top-$k$ distillation optimization} (\href{https://github.com/NVIDIA-NeMo/RL/pull/3314}{\#3314}): replaced full-vocabulary student log-softmax with a tensor-parallel gather of teacher-selected logits, reducing the dominant intermediate from $O(TV)$ to $O(TK)$ while preserving the exact loss and gradient semantics.}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 
