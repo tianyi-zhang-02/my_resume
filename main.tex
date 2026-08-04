@@ -111,11 +111,11 @@
     {LinkedIn Corporation $\cdot$ Topicality AI}{Mountain View, CA}
     {AI/ML Research Engineer Intern}{May 2026 -- Present}
 \resumeItemListStart
-  \resumeItem{Designed a \textbf{multi-intent member representation} that replaces the legacy single fused embedding with \textbf{multiple learned latent intent embeddings}, preserving distinct profile- and history-conditioned interests until retrieval instead of collapsing them into one narrow neighborhood.}
+  \resumeItem{Designed a \textbf{multi-vector member representation} for out-of-network and \textbf{Semantic ID (SID)-based generative recommendation}, modeling user intent as a multimodal distribution rather than one quantized point; each member retains $m$ latent intent vectors so minority interests are not diluted.}
 
-  \resumeItem{Built a production-scale \textbf{PySpark retrieval scorecard} with matched lifecycle evaluation; found Semi-cold and new members already achieve strong relevance but weak breadth, reframing the problem from recall lift to over-concentration and shifting the design toward \textbf{lifecycle-aware routing and quotas} across profile/history intents, gated by shared-item-tower complementarity tests.}
+  \resumeItem{Built a production-scale \textbf{PySpark retrieval scorecard}; found Semi-cold and new members achieve strong relevance but weak breadth, motivating \textbf{lifecycle-aware intent routing and diversity constraints}.}
 
-  \resumeItem{Separately designing and delivering an \textbf{objective-aware training data compiler} that compiles shared, ephemeral sources into versioned and auditable datasets for \textbf{continued pretraining, co-training, and reinforcement learning}, decoupling data semantics from individual trainers while standardizing objective definitions, sampling, lineage, experiment manifests, and train/serve contracts.}
+  \resumeItem{Architecting an \textbf{objective-aware training data compiler} that transforms heterogeneous, ephemeral logs into versioned longitudinal datasets for \textbf{SID learning, continued pretraining, co-training, and RL post-training}, with reproducible objectives, sampling, lineage, and train--serve contracts.}
 \resumeItemListEnd
 
   \resumeSubheading
