@@ -111,9 +111,9 @@
     {LinkedIn Corporation}{Mountain View, CA}
     {AI/ML Engineer Intern $|$ Topicality AI}{May 2026 -- Present}
 \resumeItemListStart
-  \resumeItem{Designed a \textbf{multi-intent member representation} that replaces the legacy single fused embedding with \textbf{multiple learned latent intent embeddings}, retaining distinct profile- and history-conditioned signals until retrieval instead of collapsing them upfront; designed shared-item-tower evaluation for complementarity and routing, while production audits showed selection, not representation capacity, is the immediate lever.}
+  \resumeItem{Designed a \textbf{multi-intent member representation} that replaces the legacy single fused embedding with \textbf{multiple learned latent intent embeddings}, preserving distinct profile- and history-conditioned interests until retrieval instead of collapsing them into one narrow neighborhood.}
 
-  \resumeItem{Built a production-scale \textbf{PySpark retrieval scorecard} with matched lifecycle evaluation; found Semi-cold members consistently retrieve more relevant but less diverse content across independently trained models, informing model selection and lifecycle strategy that balance relevance with feed breadth.}
+  \resumeItem{Built a production-scale \textbf{PySpark retrieval scorecard} with matched lifecycle evaluation; found Semi-cold and new members already achieve strong relevance but weak breadth, reframing the problem from recall lift to over-concentration and shifting the design toward \textbf{lifecycle-aware routing and quotas} across profile/history intents, gated by shared-item-tower complementarity tests.}
 
   \resumeItem{Separately designing and delivering an \textbf{objective-aware training data compiler} that compiles shared, ephemeral sources into versioned and auditable datasets for \textbf{continued pretraining, co-training, and reinforcement learning}, decoupling data semantics from individual trainers while standardizing objective definitions, sampling, lineage, experiment manifests, and train/serve contracts.}
 \resumeItemListEnd
