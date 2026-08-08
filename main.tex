@@ -73,10 +73,6 @@
   \vspace{2pt}\item[]\small{\textit{Keywords: #1}}\vspace{-2pt}
 }
 
-\newcommand{\resumeTopics}[1]{%
-  \par{\hspace{1pt}\scriptsize\color{Gray}\textsf{#1}}\par\vspace{-4pt}
-}
-
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
@@ -114,7 +110,6 @@
 \resumeSubheading
     {LinkedIn Corporation}{Mountain View, CA}
     {Machine Learning Engineer Intern}{May 2026 -- Present}
-\resumeTopics{Multimodal GenAI \enspace$\cdot$\enspace Content Intelligence \enspace$\cdot$\enspace Post-Training Systems}
 \resumeItemListStart
   \resumeItem{Designed and handed off a \textbf{Qwen-based multi-tower representation architecture} with separate profile/history encoders and learnable routing; complementary signals motivated latent topic modeling beyond direct member-to-item matching.}
 
@@ -126,7 +121,6 @@
   \resumeSubheading
     {Georgia Tech EIC Lab $\cdot$ NVIDIA AI Research}{Atlanta, GA}
     {Research Engineer}{Jul 2025 -- Dec 2025}
-  \resumeTopics{Agent Evaluation \enspace$\cdot$\enspace Benchmark Reliability \enspace$\cdot$\enspace LLM-as-Judge}
   \resumeItemListStart
     \resumeItem{Engineered the \textbf{AgentSuite} benchmark-auditing pipeline, implementing a \textbf{taxonomy-guided LLM judge} and deterministic structural detectors for user, environment, ground-truth, and evaluation failures.}
     \resumeItem{Built cross-benchmark validation against expert audits, enabling the system to generalize to unseen task formats, surface undocumented defects, and quantify their impact on model rankings.}
@@ -136,7 +130,6 @@
 \resumeSubheading
     {Emory Graph Mining Lab}{Atlanta, GA}
     {Machine Learning Researcher}{Dec 2023 -- May 2025}
-  \resumeTopics{Causal Graph Learning \enspace$\cdot$\enspace Dynamic fMRI \enspace$\cdot$\enspace AI for Science}
   \resumeItemListStart
     \resumeItem{Designed a \textbf{Granger-causal directed-graph framework} that converts fMRI time series into asymmetric brain networks, preserving downstream prediction while exposing stable directional flows hidden by undirected correlation graphs.}
     \resumeItem{Co-developed a \textbf{Brain Network State Transformer} that clusters dynamic connectivity into recurring latent states, rechunks BOLD signals by state, and models intra-/inter-state structure for stronger downstream prediction.}
@@ -157,7 +150,6 @@ Benchmark Auditing Pipeline}'' \textit{International Conference on Machine Learn
 \section{Open Source}
   \resumeSubHeadingListStart
     \resumeProjectHeading{\textbf{NVIDIA NeMo RL}: Open-Source Contributor \small{\href{https://github.com/NVIDIA-NeMo/RL/commits/main/?author=tianyi-zhang-02}{\faGithub}}}{}
-    \resumeTopics{RL Systems \enspace$\cdot$\enspace Distributed Correctness \enspace$\cdot$\enspace Performance}
     \resumeItemListStart
       \resumeItem{Shipped merged correctness and data support across deterministic checkpoint selection, config validation, GSM8K subsets, and OpenR1/NuminaMath response datasets. {\footnotesize[\href{https://github.com/NVIDIA-NeMo/RL/pull/3071}{\#3071} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3131}{\#3131} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3271}{\#3271} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3389}{\#3389} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3417}{\#3417}]}}
       \resumeItem{Optimized \textbf{distillation and inference log-probability}: reduced same-vocabulary top-$k$ KD from $O(TV)$ to $O(TK)$ and removed an inference-only softmax, cutting a TP=8 path from \textbf{23.3 ms to 10.9 ms} and avoiding \textbf{148 MiB}. \textit{Under review:} SGLang checkpoint-engine refit, a unified GRPO/PPO advantage-estimator contract, and $\sim$33\% lower top-$k$ KD memory. {\footnotesize[merged: \href{https://github.com/NVIDIA-NeMo/RL/pull/3314}{\#3314}, \href{https://github.com/NVIDIA-NeMo/RL/pull/3484}{\#3484}; review: \href{https://github.com/NVIDIA-NeMo/RL/pull/3519}{\#3519}, \href{https://github.com/NVIDIA-NeMo/RL/pull/3512}{\#3512}, \href{https://github.com/NVIDIA-NeMo/RL/pull/3496}{\#3496}]}}
