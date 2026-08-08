@@ -113,9 +113,9 @@
 \resumeItemListStart
   \resumeItem{Designed and handed off a \textbf{multi-tower member encoder} with separate profile/history representations and a learnable gate; complementary unique targets from the two towers motivated sparsity-aware user-to-topic-cluster retrieval.}
 
-  \resumeItem{Shipped the team's first production-scale \textbf{PySpark offline evaluation} beyond aggregate Recall, adding lifecycle/signal-strength slices and coverage, intra-list, and \textbf{topical diversity} metrics; found Semi-cold/new members achieve higher matched Recall but narrower breadth, exposing a \textbf{relevance--diversity tradeoff}.}
+  \resumeItem{Shipped the team's first production-scale \textbf{PySpark offline evaluation} beyond aggregate Recall, adding lifecycle/signal-strength slices and coverage, intra-list, and \textbf{topical diversity} metrics; found Semi-cold/new members achieve higher matched Recall but narrower breadth, showing that pointwise relevance can trade off with slate quality.}
 
-  \resumeItem{Proposed a \textbf{multimodal OON content-quality objective}: SFT text/vision encoders on early professional-engagement signals to surface long-form posts that earn sustained attention without direct-network trust. Traced limited SFT/RL gains to fragmented data and architected an \textbf{objective-aware training data compiler}.}
+  \resumeItem{Proposed a \textbf{multimodal OON quality objective} for sustained professional attention. Found RL premature because sparse, policy-biased feedback and missing longitudinal state make reward attribution unreliable and can trade engagement against diversity; architected an \textbf{objective-aware data compiler} for reproducible SFT/RL.}
 \resumeItemListEnd
 
   \resumeSubheading
