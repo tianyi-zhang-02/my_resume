@@ -111,9 +111,9 @@
     {LinkedIn Corporation}{Mountain View, CA}
     {ML Engineer Intern}{May 2026 -- Present}
 \resumeItemListStart
-  \resumeItem{Framed out-of-network retrieval around two failure modes---\textbf{sparse supervision/member histories} and \textbf{limited candidate diversity}---and designed a multi-vector two-tower model that preserves $m$ latent intents instead of collapsing minority interests into one embedding.}
+  \resumeItem{Designed and handed off a \textbf{multi-tower member encoder} with separate profile/history representations and a learnable gate. Limited aggregate Recall lift but complementary unique targets motivated sparsity-aware user-to-topic-cluster retrieval.}
 
-  \resumeItem{Shipped the team's first production-scale \textbf{PySpark offline evaluation framework} beyond aggregate Recall, adding lifecycle slices and signal-strength analysis for sparsity plus diversity metrics for breadth; diagnosed where an SFT-tuned Qwen encoder helps or fails and quantified a Semi-cold/new-member \textbf{relevance--breadth tradeoff}.}
+  \resumeItem{Shipped the team's first production-scale \textbf{PySpark offline evaluation} beyond aggregate Recall, adding lifecycle/signal-strength slices and coverage, intra-list, and \textbf{topical diversity} metrics; diagnosed where an SFT-tuned Qwen encoder helps or fails and exposed a Semi-cold/new-member \textbf{relevance--breadth tradeoff}.}
 
   \resumeItem{Investigated \textbf{SFT and RL post-training} as interventions and traced limited short-horizon gains to fragmented, non-longitudinal data; architected an \textbf{objective-aware training data compiler} to support SID learning, continued pretraining, co-training, and RL with reproducible lineage and train--serve contracts.}
 \resumeItemListEnd
