@@ -113,7 +113,7 @@
 \resumeItemListStart
   \resumeItem{Designed a \textbf{multi-vector member representation} for out-of-network \textbf{two-tower retrieval}, modeling member intent as a distribution of $m$ latent vectors rather than one fused point so minority interests remain retrievable.}
 
-  \resumeItem{Built a production-scale \textbf{PySpark retrieval scorecard}; found Semi-cold and new members achieve strong relevance but weak breadth, then translated the result into \textbf{lifecycle-aware intent routing, diversity constraints, and complementarity gates}.}
+  \resumeItem{Built a production-scale \textbf{PySpark retrieval scorecard} for candidate retrieval with extremely sparse positives, where Recall alone was inconclusive; combined matched lifecycle relevance, breadth, and complementarity evidence to motivate \textbf{intent routing, diversity constraints, and allocator gates}.}
 
   \resumeItem{Ran \textbf{SFT and RL post-training} experiments and traced limited short-horizon gains to fragmented, non-longitudinal data; architected an \textbf{objective-aware training data compiler} that produces versioned datasets for SID learning, continued pretraining, co-training, and RL with reproducible lineage and train--serve contracts.}
 \resumeItemListEnd
