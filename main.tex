@@ -38,7 +38,7 @@
 \setlength{\tabcolsep}{0in}
 
 \titleformat{\section}{
-  \vspace{-6pt}\scshape\raggedright\large
+  \vspace{-8pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
 
 \pdfgentounicode=1
@@ -46,7 +46,7 @@
 %-------------------------
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-1pt}}
+    {#1 \vspace{-2pt}}
   }
 }
 
@@ -76,9 +76,9 @@
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-3pt}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=2.5pt, topsep=3pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-4pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=1.5pt, topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
 
 \begin{document}
 
@@ -91,6 +91,7 @@
     \href{https://scholar.google.com/citations?hl=en&view_op=list_works&user=46rbYk0AAAAJ}{Google Scholar} $|$
     \href{https://tianyi-zhang-02.github.io}{tianyi-zhang-02.github.io}
 \end{center}
+\vspace{-5pt}
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -139,7 +140,7 @@
 
 %-----------PUBLICATIONS-----------
 \section{Publications}
-\begin{itemize}[leftmargin=0.15in, label={}, itemsep=3.5pt, topsep=3pt]
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=2pt, topsep=2pt]
   \resumePublication{H. Suh*, S. Lee*, B. Ji*, R. Khare, B. Khan, H. Kim, \textbf{T. Zhang}, et al. ``\href{https://openreview.net/pdf?id=2Exmr1eIKZ}{AgentSuite: Toward More Reliable Agent Evaluation with a Component-Based
 Benchmark Auditing Pipeline}'' \textit{International Conference on Machine Learning} (\textbf{ICML}) 2026.}
   \resumePublication{\textbf{T. Zhang}, K. Han, J. Nie, et al. ``\href{https://link.springer.com/chapter/10.1007/978-3-031-95841-0_81}{Causal Brain Connectivity: Integrating Granger Directed Graphs in fMRI Analysis}.'' \textit{International Conference on Artificial Intelligence in Medicine} (\textbf{AIME}) 2025.}
@@ -152,18 +153,18 @@ Benchmark Auditing Pipeline}'' \textit{International Conference on Machine Learn
     \resumeProjectHeading{\textbf{NVIDIA NeMo RL}: Open-Source Contributor \small{\href{https://github.com/NVIDIA-NeMo/RL/commits/main/?author=tianyi-zhang-02}{\faGithub}}}{}
     \resumeItemListStart
       \resumeItem{Shipped merged correctness and data support across deterministic checkpoint selection, config validation, GSM8K subsets, and OpenR1/NuminaMath response datasets. {\footnotesize[\href{https://github.com/NVIDIA-NeMo/RL/pull/3071}{\#3071} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3131}{\#3131} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3271}{\#3271} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3389}{\#3389} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3417}{\#3417}]}}
-      \resumeItem{Optimized \textbf{distillation and inference log-probability}: reduced same-vocabulary top-$k$ KD from $O(TV)$ to $O(TK)$ and removed an inference-only softmax, cutting a TP=8 path from \textbf{23.3 ms to 10.9 ms} and avoiding \textbf{148 MiB}. \textit{Under review:} SGLang checkpoint-engine refit, a unified GRPO/PPO advantage-estimator contract, and $\sim$33\% lower top-$k$ KD memory. {\footnotesize[merged: \href{https://github.com/NVIDIA-NeMo/RL/pull/3314}{\#3314}, \href{https://github.com/NVIDIA-NeMo/RL/pull/3484}{\#3484}; under review: \href{https://github.com/NVIDIA-NeMo/RL/pull/3519}{\#3519}, \href{https://github.com/NVIDIA-NeMo/RL/pull/3512}{\#3512}, \href{https://github.com/NVIDIA-NeMo/RL/pull/3496}{\#3496}]}}
+      \resumeItem{Optimized \textbf{top-$k$ distillation and inference log-probability}: reduced KD from $O(TV)$ to $O(TK)$ and removed inference-only softmax, cutting a TP=8 path from \textbf{23.3 ms to 10.9 ms} and avoiding \textbf{148 MiB}. \textit{Under review:} SGLang checkpoint-engine refit, a unified GRPO/PPO advantage-estimator contract, and $\sim$33\% lower KD memory. {\footnotesize[merged: \href{https://github.com/NVIDIA-NeMo/RL/pull/3314}{\#3314}, \href{https://github.com/NVIDIA-NeMo/RL/pull/3484}{\#3484}; under review: \href{https://github.com/NVIDIA-NeMo/RL/pull/3519}{\#3519}, \href{https://github.com/NVIDIA-NeMo/RL/pull/3512}{\#3512}, \href{https://github.com/NVIDIA-NeMo/RL/pull/3496}{\#3496}]}}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
-\vspace{2pt}
+\vspace{0pt}
 \begin{tabularx}{0.97\textwidth}{@{}>{\small\bfseries}p{1.45in} >{\small\arraybackslash}X@{}}
-  Languages & Python, Go, SQL, C/C++, Java, R \\[1.5pt]
-  ML \& Modeling & PyTorch, Hugging Face Transformers, recommender systems, graph learning \\[1.5pt]
-  LLM \& Post-Training & PyTorch Distributed, CUDA, vLLM, SGLang, NVIDIA NeMo RL, verl, MLflow \\[1.5pt]
+  Languages & Python, Go, SQL, C/C++, Java, R \\[0.5pt]
+  ML \& Modeling & PyTorch, Hugging Face Transformers, recommender systems, graph learning \\[0.5pt]
+  LLM \& Post-Training & PyTorch Distributed, CUDA, vLLM, SGLang, NVIDIA NeMo RL, verl, MLflow \\[0.5pt]
   Data \& Experimentation & PySpark, Apache Spark, Docker, AWS, GitHub Actions, FastAPI, Linux, PostgreSQL, Redis
 \end{tabularx}
 \vspace{-4pt}
