@@ -112,9 +112,9 @@
     {LinkedIn}{Mountain View, CA}
     {Machine Learning Engineer Intern}{May 2026 -- Aug 2026}
 \resumeItemListStart
-  \resumeItem{Framed out-of-network discovery as \textbf{preference learning from sparse, policy-biased feedback}, where observed engagements cover only content exposed by prior policies; designed and handed off a Qwen two-tower retriever whose member side separately encodes profile and history and combines their intent representations through a learnable router.}
+  \resumeItem{Framed out-of-network discovery as \textbf{preference learning from sparse, policy-biased feedback}, where observed engagements cover only content exposed by prior policies; designed and handed off a Qwen two-tower retriever with separate profile/history member encoders and learnable routing, spanning PyTorch Lightning/Qwen3 training, FSDP export, vLLM inference, and Flyte/OpenConnect orchestration.}
 
-  \resumeItem{Developed a tiered \textbf{candidate-understanding pipeline} spanning metadata, OCR, lightweight VLMs, and full VLM inference; normalized extracted semantics into text for the candidate encoder and used nearline re-embedding of new or updated posts to keep the ANN index fresh without online VLM inference.}
+  \resumeItem{Built an end-to-end \textbf{VLM candidate-understanding pipeline} combining post metadata, OCR, and full visual-language inference; generated retrieval-ready text for the candidate encoder and used nearline re-embedding of new or updated posts to refresh the ANN index without adding online VLM cost.}
 
   \resumeItem{Built a production-scale PySpark \textbf{behavioral evaluation framework} with lifecycle/signal-strength slices, matched cohorts, coverage, within-list embedding similarity, and topical diversity; found that SFT-trained retrieval retained strong relevance while concentrating Semi-cold/new-member results in narrow semantic neighborhoods.}
 
@@ -154,8 +154,8 @@ Benchmark Auditing Pipeline}'' \textit{International Conference on Machine Learn
   \resumeSubHeadingListStart
     \resumeProjectHeading{\textbf{NVIDIA NeMo RL}: Open-Source Contributor \small{\href{https://github.com/NVIDIA-NeMo/RL/commits/main/?author=tianyi-zhang-02}{\faGithub}}}{}
     \resumeItemListStart
-      \resumeItem{Shipped \textbf{7 merged contributions} spanning post-training data integrity and efficiency: deterministic checkpoint selection, config validation, GSM8K/OpenR1/NuminaMath datasets, tensor-parallel $O(TK)$ top-$k$ distillation, and inference log-probability without full-vocabulary softmax. {\footnotesize[\href{https://github.com/NVIDIA-NeMo/RL/pull/3071}{\#3071} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3131}{\#3131} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3271}{\#3271} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3314}{\#3314} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3389}{\#3389} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3417}{\#3417} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3484}{\#3484}]}}
-      \resumeItem{\textit{Under review:} SGLang checkpoint-engine refit with rank-local NIXL streams; a unified advantage-estimator contract across GRPO/PPO; correct masking of non-finite policy log-probabilities; lower-memory top-$k$ KD; and lazy optional imports cutting GRPO import time by \textbf{58\%}. {\footnotesize[\href{https://github.com/NVIDIA-NeMo/RL/pull/3496}{\#3496} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3512}{\#3512} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3515}{\#3515} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3519}{\#3519} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3551}{\#3551} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3552}{\#3552}]}}
+      \resumeItem{Shipped \textbf{7 merged contributions} spanning post-training data integrity and efficiency: deterministic checkpoint selection, config validation, GSM8K/OpenR1/NuminaMath datasets, $O(TK)$ same-vocabulary top-$k$ distillation, and inference log-probability without softmax materialization. {\footnotesize[\href{https://github.com/NVIDIA-NeMo/RL/pull/3071}{\#3071} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3131}{\#3131} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3271}{\#3271} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3314}{\#3314} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3389}{\#3389} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3417}{\#3417} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3484}{\#3484}]}}
+      \resumeItem{\textit{7 under review:} lower-memory and sparse top-$k$ KD paths; a unified advantage-estimator contract; HTTP-refit rank-error handling; correct $-\infty$ policy-loss masking; SGLang checkpoint-engine refit with rank-local NIXL streams; and lazy imports cutting GRPO import time by \textbf{58\%}. {\footnotesize[\href{https://github.com/NVIDIA-NeMo/RL/pull/3496}{\#3496} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3512}{\#3512} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3515}{\#3515} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3519}{\#3519} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3551}{\#3551} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3552}{\#3552} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3564}{\#3564}]}}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -165,9 +165,9 @@ Benchmark Auditing Pipeline}'' \textit{International Conference on Machine Learn
 \vspace{0pt}
 \begin{tabularx}{0.97\textwidth}{@{}>{\small\bfseries}p{1.45in} >{\small\arraybackslash}X@{}}
   Languages & Python, Go, SQL, C/C++, Java, R \\[0.5pt]
-  ML \& Modeling & PyTorch, Hugging Face Transformers, recommender systems, graph learning \\[0.5pt]
-  LLM \& Post-Training & PyTorch Distributed, CUDA, vLLM, SGLang, NVIDIA NeMo RL, verl, MLflow \\[0.5pt]
-  Data \& Experimentation & PySpark, Apache Spark, Docker, AWS, GitHub Actions, FastAPI, Linux, PostgreSQL, Redis
+  ML \& Modeling & PyTorch, PyTorch Lightning, Hugging Face Transformers, Qwen3, VLMs, recommender systems \\[0.5pt]
+  LLM \& Post-Training & PyTorch Distributed/FSDP, CUDA, vLLM, SGLang, NVIDIA NeMo RL, verl \\[0.5pt]
+  Data \& Experimentation & PySpark, Apache Spark, Flyte, MLflow, Docker, AWS, GitHub Actions, Linux, PostgreSQL, Redis
 \end{tabularx}
 \vspace{-4pt}
 
