@@ -112,13 +112,11 @@
     {LinkedIn}{Mountain View, CA}
     {Machine Learning Engineer Intern}{May 2026 -- Aug 2026}
 \resumeItemListStart
-  \resumeItem{Framed out-of-network discovery as \textbf{preference learning from sparse, policy-biased feedback}, where observed engagements cover only content exposed by prior policies; designed and handed off a Qwen two-tower retriever with separate profile/history member encoders and learnable routing, spanning PyTorch Lightning/Qwen3 training, FSDP export, vLLM inference, and Flyte/OpenConnect orchestration.}
+  \resumeItem{Post-trained a \textbf{Qwen3-Embedding-0.6B two-tower retriever} from sparse, policy-biased feedback, separating profile- and history-conditioned member representations; showed that the two views recover complementary relevant candidates and designed learnable routing across their candidate pools.}
 
-  \resumeItem{Built an end-to-end \textbf{VLM candidate-understanding pipeline} combining post metadata, OCR, and full visual-language inference; generated retrieval-ready text for the candidate encoder and used nearline re-embedding of new or updated posts to refresh the ANN index without adding online VLM cost.}
+  \resumeItem{Designed a \textbf{serving-aware multimodal candidate path}: a lightweight image router selectively invokes a pretrained VLM for grounded visual extraction, serializes the evidence with post text, and precomputes candidate embeddings for ANN retrieval and the existing downstream ranker.}
 
-  \resumeItem{Built a production-scale PySpark \textbf{behavioral evaluation framework} with lifecycle/signal-strength slices, matched cohorts, coverage, within-list embedding similarity, and topical diversity; found that SFT-trained retrieval retained strong relevance while concentrating Semi-cold/new-member results in narrow semantic neighborhoods.}
-
-  \resumeItem{Hybridized dense and generative retrieval to expand long-tail candidate support beyond dense embedding neighborhoods; built a longitudinal \textbf{user-simulation framework} modeling latent preference, exposure, and sequential response to compare SFT, preference optimization, and RL policies under relevance--diversity and serving constraints.}
+  \resumeItem{Developed a \textbf{behavioral evaluation framework} across matched lifecycle and signal-strength cohorts, combining relevance, coverage, complementarity, and topical diversity; identified strong matched relevance but narrow semantic breadth and defined longitudinal simulation as an offline stress test before controlled online validation.}
 \resumeItemListEnd
 
   \resumeSubheading
