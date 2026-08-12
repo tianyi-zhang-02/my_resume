@@ -112,11 +112,13 @@
     {LinkedIn}{Mountain View, CA}
     {Machine Learning Engineer Intern}{May 2026 -- Aug 2026}
 \resumeItemListStart
-  \resumeItem{Framed out-of-network discovery as \textbf{preference learning from sparse, policy-biased feedback}; designed and handed off a Qwen retriever with separate profile- and history-conditioned member encoders and learnable routing, preserving complementary intents beyond one fused representation.}
+  \resumeItem{Framed out-of-network discovery as \textbf{preference learning from sparse, policy-biased feedback}, where observed engagements cover only content exposed by prior policies; designed and handed off a Qwen two-tower retriever whose member side separately encodes profile and history and combines their intent representations through a learnable router.}
 
-  \resumeItem{Developed a tiered \textbf{candidate-understanding pipeline} spanning metadata, OCR, lightweight VLMs, and full VLM inference; converted enriched content into retrieval-ready text with freshness-aware nearline recomputation, balancing semantic coverage against serving cost.}
+  \resumeItem{Developed a tiered \textbf{candidate-understanding pipeline} spanning metadata, OCR, lightweight VLMs, and full VLM inference; normalized extracted semantics into text for the candidate encoder and used nearline re-embedding of new or updated posts to keep the ANN index fresh without online VLM inference.}
 
-  \resumeItem{Built a production-scale \textbf{behavioral evaluation framework} across lifecycle/signal-strength slices, relevance, coverage, and topical diversity; diagnosed semantically concentrated retrieval despite strong matched relevance, then hybridized dense/generative sources for long-tail support and built longitudinal user simulation for post-training beyond logged interactions.}
+  \resumeItem{Built a production-scale PySpark \textbf{behavioral evaluation framework} with lifecycle/signal-strength slices, matched cohorts, coverage, within-list embedding similarity, and topical diversity; found that SFT-trained retrieval retained strong relevance while concentrating Semi-cold/new-member results in narrow semantic neighborhoods.}
+
+  \resumeItem{Hybridized dense and generative retrieval to expand long-tail candidate support beyond dense embedding neighborhoods; built a longitudinal \textbf{user-simulation framework} modeling latent preference, exposure, and sequential response to compare SFT, preference optimization, and RL policies under relevance--diversity and serving constraints.}
 \resumeItemListEnd
 
   \resumeSubheading
