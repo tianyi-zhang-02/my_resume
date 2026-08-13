@@ -112,11 +112,11 @@
     {LinkedIn}{Mountain View, CA}
     {Machine Learning Engineer Intern}{May 2026 -- Aug 2026}
 \resumeItemListStart
-  \resumeItem{Audited and corrected the production \textbf{Majority Member Experience (MME) retriever} trained with supervised InfoNCE on sparse, policy-biased feedback: redesigned labels and exposure-aware negatives, enforced train/eval contracts, and replaced rank-local competition with an autograd-correct global candidate objective aligned to catalog-scale retrieval.}
+  \resumeItem{Audited and corrected the production \textbf{Majority Member Experience (MME) retriever}, trained with supervised InfoNCE from sparse positives and imputed negatives: tightened positive definitions and negative sampling, enforced versioned train/eval contracts, exposed evaluation drift, and designed an autograd-correct global candidate objective for catalog-scale retrieval.}
 
-  \resumeItem{Designed a \textbf{multi-signal retrieval architecture}: separate profile/history member views with learnable routing preserve complementary intent, while a gated frozen-VLM path converts visual evidence into precomputed candidate embeddings; both remain compatible with ANN retrieval and ranking.}
+  \resumeItem{Designed a \textbf{multi-signal retrieval architecture} to preserve complementary signals: profile/history member views retrieve separate pools through learnable routing, while a gated frozen VLM converts image evidence into precomputed candidate embeddings with no online VLM inference.}
 
-  \resumeItem{Built \textbf{behavioral evaluation} to test whether each signal contributes unique relevant candidates and how relevance trades against coverage, complementarity, and topical diversity across lifecycle/signal cohorts; defined longitudinal simulation as an offline stress test before controlled online validation.}
+  \resumeItem{Shipped \textbf{behavioral evaluation} across matched lifecycle/signal-strength cohorts, measuring relevance, coverage, complementarity, and topical diversity; revealed high relevance but narrow breadth for Semi-cold/new members, motivating signal-aware routing, diversity objectives, and longitudinal simulation before online validation.}
 \resumeItemListEnd
 
   \resumeSubheading
@@ -163,9 +163,9 @@ Benchmark Auditing Pipeline}'' \textit{International Conference on Machine Learn
 \vspace{0pt}
 \begin{tabularx}{0.97\textwidth}{@{}>{\small\bfseries}p{1.45in} >{\small\arraybackslash}X@{}}
   Languages & Python, Go, SQL, C/C++, Java, R \\[0.5pt]
-  ML \& Modeling & PyTorch, PyTorch Lightning, Hugging Face Transformers, Qwen3, VLMs, recommender systems \\[0.5pt]
-  LLM \& Post-Training & PyTorch Distributed/FSDP, CUDA, vLLM, SGLang, NVIDIA NeMo RL, verl \\[0.5pt]
-  Data \& Experimentation & PySpark, Apache Spark, Flyte, MLflow, Docker, AWS, GitHub Actions, Linux, PostgreSQL, Redis
+  Learning \& Retrieval & PyTorch, Hugging Face Transformers, contrastive learning, information retrieval, recommender systems, VLMs \\[0.5pt]
+  Post-Training \& Eval. & SFT, RL, knowledge distillation, NVIDIA NeMo RL, verl, vLLM, SGLang, LLM-as-judge \\[0.5pt]
+  Data \& Systems & PySpark, Apache Spark, Flyte, MLflow, FSDP, CUDA, Docker, AWS, GitHub Actions, Linux
 \end{tabularx}
 \vspace{-4pt}
 
