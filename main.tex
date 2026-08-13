@@ -110,20 +110,20 @@
 
 \resumeSubheading
     {LinkedIn}{Mountain View, CA}
-    {Machine Learning Engineer Intern --- Retrieval \& Relevance}{May 2026 -- Aug 2026}
+    {Machine Learning Engineer Intern}{May 2026 -- Aug 2026}
 \resumeItemListStart
   \resumeItem{Improved the production \textbf{Majority Member Experience (MME) embedding retriever} by auditing data and the InfoNCE objective; found dwell-dominated positives, missing rejection supervision, positive-only histories, and imputed negatives, then tightened supervision, data contracts, and candidate-pool correctness.}
 
   \resumeItem{Designed and handed off a serving-compatible \textbf{multi-task, multi-tower teacher--student architecture}: profile/history towers preserve complementary intents; an offline VLM teacher supplies dense relevance and hard negatives; distillation, precomputed embeddings, and lightweight routing add signal without online inference.}
 
-  \resumeItem{Shipped \textbf{behavioral evaluation} to test whether added signals contribute unique relevant candidates and who benefits, measuring relevance, coverage, complementarity, and topical diversity across matched lifecycle/signal cohorts; revealed high relevance but narrow breadth for Semi-cold/new members and set gates beyond aggregate Recall.}
+  \resumeItem{Shipped production-scale \textbf{behavioral evaluation} to test whether added signals contribute unique relevant candidates and who benefits, measuring relevance, coverage, complementarity, and topical diversity across matched lifecycle/signal cohorts; revealed high relevance but narrow breadth for Semi-cold/new members and set gates beyond aggregate Recall.}
 \resumeItemListEnd
 
   \resumeSubheading
     {Georgia Tech EIC Lab $\cdot$ NVIDIA AI Research}{Atlanta, GA}
     {Student Researcher}{Jul 2025 -- Dec 2025}
   \resumeItemListStart
-    \resumeItem{Engineered the \textbf{AgentSuite} benchmark-auditing pipeline, implementing a \textbf{taxonomy-guided LLM judge} and deterministic structural detectors for user, environment, ground-truth, and evaluation failures.}
+    \resumeItem{Engineered the \textbf{AgentSuite} benchmark-auditing pipeline, implementing a taxonomy-guided LLM judge and deterministic structural detectors that matched expert audits at \textbf{0.79--0.87 F1} across \textbf{6 benchmarks}.}
     \resumeItem{Built cross-benchmark validation against expert audits, enabling the system to generalize to unseen task formats, surface undocumented defects, and quantify their impact on model rankings.}
   \resumeItemListEnd
 
@@ -152,8 +152,8 @@ Benchmark Auditing Pipeline}'' \textit{International Conference on Machine Learn
   \resumeSubHeadingListStart
     \resumeProjectHeading{\textbf{NVIDIA NeMo RL}: Open-Source Contributor \small{\href{https://github.com/NVIDIA-NeMo/RL/commits/main/?author=tianyi-zhang-02}{\faGithub}}}{}
     \resumeItemListStart
-      \resumeItem{Shipped \textbf{7 merged contributions} spanning post-training data integrity and efficiency: deterministic checkpoint selection, config validation, GSM8K/OpenR1/NuminaMath datasets, $O(TK)$ same-vocabulary top-$k$ distillation, and inference log-probability without softmax materialization. {\footnotesize[\href{https://github.com/NVIDIA-NeMo/RL/pull/3071}{\#3071} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3131}{\#3131} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3271}{\#3271} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3314}{\#3314} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3389}{\#3389} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3417}{\#3417} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3484}{\#3484}]}}
-      \resumeItem{\textit{7 under review:} lower-memory and sparse top-$k$ KD paths; a unified advantage-estimator contract; HTTP-refit rank-error handling; correct $-\infty$ policy-loss masking; SGLang checkpoint-engine refit with rank-local NIXL streams; and lazy imports cutting GRPO import time by \textbf{58\%}. {\footnotesize[\href{https://github.com/NVIDIA-NeMo/RL/pull/3496}{\#3496} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3512}{\#3512} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3515}{\#3515} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3519}{\#3519} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3551}{\#3551} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3552}{\#3552} $\cdot$ \href{https://github.com/NVIDIA-NeMo/RL/pull/3564}{\#3564}]}}
+      \resumeItem{Shipped \textbf{7 merged contributions} spanning post-training data integrity and efficiency: deterministic checkpoint selection, config validation, GSM8K/OpenR1/NuminaMath datasets, $O(TK)$ same-vocabulary top-$k$ distillation, and inference log-probability without softmax materialization.}
+      \resumeItem{\textit{7 under review:} lower-memory and sparse top-$k$ KD paths; a unified advantage-estimator contract; HTTP-refit rank-error handling; correct $-\infty$ policy-loss masking; SGLang checkpoint-engine refit with rank-local NIXL streams; and lazy imports cutting GRPO import time by \textbf{58\%}.}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -163,7 +163,7 @@ Benchmark Auditing Pipeline}'' \textit{International Conference on Machine Learn
 \vspace{0pt}
 \begin{tabularx}{0.97\textwidth}{@{}>{\small\bfseries}l@{\hspace{0.22in}}>{\small\arraybackslash}X@{}}
   Languages & Python, Go, SQL, C/C++, Java, R \\[0.5pt]
-  ML Frameworks & PyTorch, TensorFlow, PyTorch Lightning, Hugging Face Transformers, LangChain \\[0.5pt]
+  ML Frameworks & PyTorch, TensorFlow, PyTorch Lightning, Hugging Face Transformers \\[0.5pt]
   Post-Training & NVIDIA NeMo RL, verl, vLLM, SGLang, CUDA \\[0.5pt]
   Data \& Tools & PySpark, Apache Spark, Flyte, MLflow, FastAPI, Docker, AWS, GitHub Actions, Linux
 \end{tabularx}
