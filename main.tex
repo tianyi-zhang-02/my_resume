@@ -112,11 +112,11 @@
     {LinkedIn}{Mountain View, CA}
     {Machine Learning Engineer Intern}{May 2026 -- Aug 2026}
 \resumeItemListStart
-  \resumeItem{Post-trained a \textbf{Qwen3-Embedding-0.6B two-tower retriever} from sparse, policy-biased feedback, separating profile- and history-conditioned member representations; showed that the two views recover complementary relevant candidates and designed learnable routing across their candidate pools.}
+  \resumeItem{Reframed out-of-network retrieval as \textbf{supervised post-training from sparse, exposure-biased feedback}; rebuilt the \textbf{Qwen3-Embedding-0.6B two-tower} data contract with graded relevance, exposure-aware hard negatives, versioned manifests, and train/eval disjointness checks, uncovering sampling leakage and evaluation drift.}
 
-  \resumeItem{Designed a \textbf{serving-aware multimodal candidate path}: a lightweight image router selectively invokes a pretrained VLM for grounded visual extraction, serializes the evidence with post text, and precomputes candidate embeddings for ANN retrieval and the existing downstream ranker.}
+  \resumeItem{Diagnosed rank-local \textbf{InfoNCE negatives} in multi-node FSDP training and designed an autograd-safe cross-rank gather with sampler-aware checks for proposal skew and false negatives, expanding contrastive coverage without silently changing the objective.}
 
-  \resumeItem{Developed a \textbf{behavioral evaluation framework} across matched lifecycle and signal-strength cohorts, combining relevance, coverage, complementarity, and topical diversity; identified strong matched relevance but narrow semantic breadth and defined longitudinal simulation as an offline stress test before controlled online validation.}
+  \resumeItem{Built a \textbf{behavioral evaluation framework} across matched lifecycle and signal-strength cohorts, separating relevance from coverage, complementarity, and topical diversity; found strong matched relevance under narrow semantic breadth, gated multi-view routing on unique-target contribution, and designed frozen-VLM visual enrichment precomputed into the existing ANN/ranker path.}
 \resumeItemListEnd
 
   \resumeSubheading
