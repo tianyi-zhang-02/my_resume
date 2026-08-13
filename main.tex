@@ -112,11 +112,11 @@
     {LinkedIn}{Mountain View, CA}
     {Machine Learning Engineer Intern}{May 2026 -- Aug 2026}
 \resumeItemListStart
-  \resumeItem{Audited and corrected the production \textbf{Majority Member Experience (MME) retriever}, trained with supervised InfoNCE from sparse positives and imputed negatives: tightened positive definitions and negative sampling, enforced versioned train/eval contracts, exposed evaluation drift, and designed an autograd-correct global candidate objective for catalog-scale retrieval.}
+  \resumeItem{Improved the production \textbf{Majority Member Experience (MME) embedding retriever} by auditing sparse positives and imputed negatives; corrected supervision, sampling, and train/eval contracts, exposed evaluation drift, and addressed InfoNCE objective issues including rank-local candidate competition.}
 
-  \resumeItem{Designed a \textbf{multi-signal retrieval architecture} to preserve complementary signals: profile/history member views retrieve separate pools through learnable routing, while a gated frozen VLM converts image evidence into precomputed candidate embeddings with no online VLM inference.}
+  \resumeItem{Designed a \textbf{multi-task, multi-tower retrieval architecture} to learn from richer member signals: separate profile- and history-conditioned views preserve complementary intents, while learnable routing combines their candidate pools instead of collapsing them into one fused representation.}
 
-  \resumeItem{Shipped \textbf{behavioral evaluation} across matched lifecycle/signal-strength cohorts, measuring relevance, coverage, complementarity, and topical diversity; revealed high relevance but narrow breadth for Semi-cold/new members, motivating signal-aware routing, diversity objectives, and longitudinal simulation before online validation.}
+  \resumeItem{Extended signal coverage to content with a gated \textbf{frozen-VLM enrichment path} that converts image evidence into precomputed candidate embeddings; shipped lifecycle-aware evaluation that revealed high relevance but narrow breadth for Semi-cold/new members and defined contribution gates for added signals.}
 \resumeItemListEnd
 
   \resumeSubheading
