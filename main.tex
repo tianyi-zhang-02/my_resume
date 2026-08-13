@@ -112,11 +112,11 @@
     {LinkedIn}{Mountain View, CA}
     {Machine Learning Engineer Intern}{May 2026 -- Aug 2026}
 \resumeItemListStart
-  \resumeItem{Reframed out-of-network retrieval as \textbf{supervised post-training from sparse, exposure-biased feedback}; rebuilt the \textbf{Qwen3-Embedding-0.6B two-tower} data contract with graded relevance, exposure-aware hard negatives, versioned manifests, and train/eval disjointness checks, uncovering sampling leakage and evaluation drift.}
+  \resumeItem{Redesigned the objective and data contract for a \textbf{Qwen3-Embedding-0.6B two-tower retriever} trained on sparse, exposure-biased feedback: replaced binary weak-signal labels with graded relevance and exposure-aware hard negatives; added versioned manifests and train/eval disjointness, exposing sampling leakage and evaluation drift.}
 
-  \resumeItem{Diagnosed rank-local \textbf{InfoNCE negatives} in multi-node FSDP training and designed an autograd-safe cross-rank gather with sampler-aware checks for proposal skew and false negatives, expanding contrastive coverage without silently changing the objective.}
+  \resumeItem{Designed \textbf{multimodal understanding} for image-heavy content: a router gates frozen-VLM extraction of visual evidence, fused with text and precomputed into candidate embeddings for the ANN/ranker path without online VLM inference.}
 
-  \resumeItem{Built a \textbf{behavioral evaluation framework} across matched lifecycle and signal-strength cohorts, separating relevance from coverage, complementarity, and topical diversity; found strong matched relevance under narrow semantic breadth, gated multi-view routing on unique-target contribution, and designed frozen-VLM visual enrichment precomputed into the existing ANN/ranker path.}
+  \resumeItem{Built \textbf{behavioral evaluation} across lifecycle and signal-strength cohorts, separating relevance from coverage, complementarity, and topical diversity; found high relevance but narrow breadth, motivating intent-aware routing and diversity objectives. Also identified rank-local InfoNCE negatives under FSDP and specified autograd-safe cross-rank gathering.}
 \resumeItemListEnd
 
   \resumeSubheading
