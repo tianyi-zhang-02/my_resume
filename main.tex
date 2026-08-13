@@ -112,11 +112,11 @@
     {LinkedIn}{Mountain View, CA}
     {Machine Learning Engineer Intern}{May 2026 -- Aug 2026}
 \resumeItemListStart
-  \resumeItem{Fine-tuned an \textbf{open-source embedding model with supervised InfoNCE} for out-of-network content retrieval using sparse, policy-biased feedback; redesigned exposure-aware labels and negatives, extending the two-tower retriever with profile/history views and learnable routing over complementary pools.}
+  \resumeItem{Audited and corrected an existing \textbf{embedding-based retrieval (EBR)} pipeline fine-tuned with supervised InfoNCE on sparse, policy-biased feedback: redesigned relevance labels and exposure-aware negatives, enforced train/eval data contracts, and identified evaluation drift and rank-local negatives in distributed training.}
 
-  \resumeItem{Designed a \textbf{serving-aware multimodal candidate path}: an image router selects posts for frozen-VLM visual extraction; evidence is serialized with post text and precomputed into candidate embeddings for ANN retrieval and downstream ranking, without online VLM inference.}
+  \resumeItem{Designed a \textbf{multi-signal retrieval architecture}: separate profile/history member views with learnable routing preserve complementary intent, while a gated frozen-VLM path converts visual evidence into precomputed candidate embeddings; both remain compatible with ANN retrieval and ranking.}
 
-  \resumeItem{Developed \textbf{behavioral evaluation} across lifecycle and signal-strength cohorts, combining relevance, coverage, complementarity, and topical diversity; identified high relevance but narrow breadth, defined longitudinal simulation as an offline stress test, and audited distributed InfoNCE negative-pool correctness before controlled online validation.}
+  \resumeItem{Built \textbf{behavioral evaluation} to test whether each signal contributes unique relevant candidates and how relevance trades against coverage, complementarity, and topical diversity across lifecycle/signal cohorts; defined longitudinal simulation as an offline stress test before controlled online validation.}
 \resumeItemListEnd
 
   \resumeSubheading
