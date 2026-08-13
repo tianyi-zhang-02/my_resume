@@ -112,11 +112,11 @@
     {LinkedIn}{Mountain View, CA}
     {Machine Learning Engineer Intern}{May 2026 -- Aug 2026}
 \resumeItemListStart
-  \resumeItem{Redesigned the objective and data contract for a \textbf{Qwen3-Embedding-0.6B two-tower retriever} trained on sparse, exposure-biased feedback: replaced binary weak-signal labels with graded relevance and exposure-aware hard negatives; added versioned manifests and train/eval disjointness, exposing sampling leakage and evaluation drift.}
+  \resumeItem{Fine-tuned an \textbf{open-source embedding model with supervised InfoNCE} for OON retrieval from sparse, policy-biased feedback; redesigned labels and exposure-aware negatives, extending the two-tower retriever with profile/history views and learnable routing over complementary candidate pools.}
 
-  \resumeItem{Designed \textbf{multimodal understanding} for image-heavy content: a router gates frozen-VLM extraction of visual evidence, fused with text and precomputed into candidate embeddings for the ANN/ranker path without online VLM inference.}
+  \resumeItem{Designed a \textbf{serving-aware multimodal candidate path}: an image router selects posts for frozen-VLM visual extraction; evidence is serialized with post text and precomputed into candidate embeddings for ANN retrieval and downstream ranking, without online VLM inference.}
 
-  \resumeItem{Built \textbf{behavioral evaluation} across lifecycle and signal-strength cohorts, separating relevance from coverage, complementarity, and topical diversity; found high relevance but narrow breadth, motivating intent-aware routing and diversity objectives. Also identified rank-local InfoNCE negatives under FSDP and specified autograd-safe cross-rank gathering.}
+  \resumeItem{Developed \textbf{behavioral evaluation} across lifecycle and signal-strength cohorts, combining relevance, coverage, complementarity, and topical diversity; identified high relevance but narrow breadth, defined longitudinal simulation as an offline stress test, and audited distributed InfoNCE negative-pool correctness before controlled online validation.}
 \resumeItemListEnd
 
   \resumeSubheading
